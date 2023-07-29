@@ -1,113 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>rudra</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <style>
-        *{
-            margin: 0px;
-            font-family: Itim;
-            
-        }
-        header{
+        * {
             margin: 0;
-            background-color: #fbe3d3;
-            background-image: url("../developer-portfolio-main/developer-portfolio-main/images/header_bg.png"),url('../developer-portfolio-main/developer-portfolio-main/images/developer.png');
-            background-repeat: no-repeat;
-            background-position: bottom right,left;
+            font-family: 'Montserrat', sans-serif;
         }
-        nav{
-            display: flex;
-            justify-content: space-between;
-            margin: 50px 200px;
-        }
-        nav .title{
-            
-            font-weight: 800px;
-            font-size: 45px;
-        }
-        nav ul{
-            display: flex;
-            align-items: center;
-        }       
-        nav li{
-            list-style: none;
-            padding: 5px;
-            align-items: center;
-        }
-        nav .primary-color{
+
+        nav .primary-color {
             color: coral;
         }
 
-        .button_style{
-            height: 64px;
-            border-radius: 5px;
-            background-color: rgb(255, 68, 0);
-            font-size: medium;
-            font-weight: 0px;
-            font-size: 15px;
-            color: antiquewhite;
-            border: 0;
-            padding: 10px 30px;
+        header {
+            background: #fff3ff;
+            background-image: url("../developer-portfolio-main/developer-portfolio-main/images/header_bg.png"), url("../developer-portfolio-main/developer-portfolio-main/images/developer.png");
+            background-repeat: no-repeat;
+            background-position: bottom right, left;
+            
         }
 
-        /*banner styles*/
-        .banner{
+        nav {
+            display: flex;
+            justify-content: space-between;
+            margin: 0px 200px;
+            padding-top: 30px;
+        }
+
+        nav .title {
+            font-weight: 800px;
+            font-size: 45px;
+        }
+
+        nav ul {
             display: flex;
             align-items: center;
-            margin: 0 200px;
         }
-        .banner-title{
+
+        nav li {
+            margin-left: 50px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .button_style {
+            height: 50px;
+            border-radius: 5px;
+            background-color: rgb(255, 68, 0);
+            font-weight: 200px;
+            font-size: 20px;
+            color: antiquewhite;
+            border: 0;
+            padding: 15px 30px;
+        }
+
+        .banner {
+            display: flex;
+            align-items: center;
+            margin: 20px 200px;
+            padding-top: 60px;
+        }
+
+        .banner-title {
             font-weight: 800;
             font-size: 85px;
-            margin-bottom: 10px;
+            margin-top: 20px;
         }
-        .banner-subtitle{
-            font-weight: 700;
-            font-size: 45px;
-            margin-bottom: 5px;
+
+        .banner-subtitle {
+            font-weight: 700px;
+            font-size: 45px;    
         }
-        .banner-des{
+
+        .banner-des {
             color: #757575;
             font-size: 18px;
+            margin-bottom: 20px;
         }
+
+        /* about section styles */
+        .about{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 130px;
+            background: #fff6ef;
+            width: 60%;
+            border-radius: 10px;
+            padding: 100px 150px;
+        }
+
+        .section-title{
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: 900px;
+            font-size: 40px;
+        }
+
+        .section-des{
+            color: #757575;
+            font-size: 18px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .about-info-container{
+            padding-top: 10px;;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .info-title{
+            font-size: 20px;
+            color: #757575;
+        }
+
+        .info-des{
+            font-weight: 700;
+            font-size: 20px;
+            color: #474747;
+        }
+
+        .what-i-do{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 130px;
+            border-radius: 10px;
+            padding: 10px 150px;
+        }
+
+        .what-sub-section{
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-around;
+            margin-left: auto;
+            margin-right: auto;        
+        }
+        .what-subdiv{
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 0px 40px rgba(0,0,0,.1);
+            border-radius: 5px;
+            padding-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;    
+        }
+
+        .what-subtitle{
+            font-weight: 600;
+            font-size: 20px
+        }
+
+        .what-icons, .what-subtitle, .what-subdes{
+            padding-top: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        /* Footer */
+
+        footer>section{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 130px;
+            background: #fff6ef;
+            width: 60%;
+            border-radius: 10px;
+            padding: 100px 150px;
+            display: flex;
+            justify-content: space-between;    
+        }
+
+        .footer-title {
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 53px; 
+            padding-bottom: 50px; 
+        }
+        
+        .lets-connect>p{
+            color: #757575;
+            font-size: 18px;
+            margin-bottom: 30px;      
+        }
+
+        .icons{
+            padding-top: 9px;
+        }
+        .input-box{
+            padding: 30px 60px;
+            margin-bottom: 10px;
+            border-style: none;
+        }
+
+        
 
         
     </style>
 
 </head>
+
 <body>
     <header>
-        <div class="header">
-            <nav class="nav">
-                <h3 class="title">Ru<span class="primary-color">d</span>ra</h3>
-                <ul>
-                    <li>Portfolio</li>
-                    <li>Home</li>
-                    <li><button class="button_style">Hire</button></li>
-                </ul>
-            </nav>
-            <div class="banner">
-                <div >
-                    <h3 class="banner-subtitle">Hi, I am</h3>
-                    <h1 class="banner-title">Mary Hardy</h1>
-                    <p class="banner-des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur totam ut nesciunt. Debitis molestiae at iste eligendi officia provident saepe?</p>
-                </div>
-                <img src="../developer-portfolio-main/developer-portfolio-main/images/hardy.png" alt="">
+        <nav class="nav">
+            <h3 class="title">Ru<span class="primary-color">d</span>ra</h3>
+            <ul>
+                <li>Portfolio</li>
+                <li>Home</li>
+                <li><button class="button_style">Hire</button></li>
+            </ul>
+        </nav>
+
+        <div class="banner">
+            <div>
+                <h3 class="banner-subtitle">Hi, I am</h3>
+                <h1 class="banner-title">Mary Hardy</h1>
+                <p class="banner-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur totam ut nesciunt. Debitis molestiae at iste eligendi officia provident saepe?</p>
+                <button class="button_style">Download CV</button>
             </div>
+            <img src="../developer-portfolio-main/developer-portfolio-main/images/hardy.png" alt="Hardy Image">
         </div>
     </header>
     <main>
+        <section class="about">
 
+            <h2 class="section-title">About Me</h2>
+            <p class="section-des">I, m a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional resulfs while working with me. Delivering work within time and budget which meets clients requirements in our mata.</p>
+            
+            <div class="about-info-container">
+                <div class="about-info">
+                    <p class="info-title">Name: </p>
+                    <p class="info-des">Mary Hardy</p>
+                </div>
+                <div class="about-info">
+                    <p class="info-title">Email: </p>
+                    <p class="info-des">info@gmail.com</p>
+                </div>
+                <div class="about-info">
+                    <p class="info-title">Speciality: </p>
+                    <p class="info-des">Web Dev</p>
+                </div>
+                <div class="about-info">
+                    <p class="info-title">Location: </p>
+                    <p class="info-des">Dhaka, BD</p>
+                </div>  
+            </div>
+        </section>
+
+
+
+
+        <!-- work from here -->
+        <section class="what-i-do">
+
+            <h3 class="section-title">What I Do</h3>
+
+            <div class="what-sub-section">
+                <div class="what-subdiv">
+                    <img src="../developer-portfolio-main/developer-portfolio-main/images/icons/js.png" alt="" class="what-icons">
+                    <h4 class="what-subtitle">Vanilla JavaScript</h4>
+                    <p class="what-subdes">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde aliquid harum voluptatum expedita laborum quibusdam?</p>
+                </div>
+                <div class="what-subdiv" style="margin-left: 25px;">
+                    <img src="../developer-portfolio-main/developer-portfolio-main/images/icons/react.png" alt="" class="what-icons">
+                    <h4 class="what-subtitle">React</h4>
+                    <p class="what-subdes">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quisquam commodi at dolore eius nulla?</p>
+                </div>
+                <div class="what-subdiv" style="margin-left: 25px;">
+                    <img src="../developer-portfolio-main/developer-portfolio-main/images/icons/mongo.png" alt="" class="what-icons">
+                    <h4 class="what-subtitle">Mongodb</h4>
+                    <p class="what-subdes">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis explicabo nobis rem quis? Nihil, veniam?</p>
+                </div>
+                <div class="what-subdiv" style="margin-left: 25px;">
+                    <img src="../developer-portfolio-main/developer-portfolio-main/images/icons/nodejs.png" alt="" class="what-icons">
+                    <h4 class="what-subtitle">Node JS</h4>
+                    <p class="what-subdes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit obcaecati nobis eos. Quidem, debitis consectetur?</p>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
+    <footer >
+        <section>
+            <div class="lets-connect" style="border:1px solid black;padding-right: 100px;">
+                <h3 class="footer-title">Let's Connect</h3>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour, or randomised words</p>
+                <div class="icons">
+                    <img src="../developer-portfolio-main/developer-portfolio-main/images/icons/facebook.png" alt="">
+                    <img src="../developer-portfolio-main/developer-portfolio-main/images/icons/twitter.png" alt="">
+                    <img src="../developer-portfolio-main/developer-portfolio-main/images/icons/insta.png" alt="">
+                </div>
+            </div>
+            <div class="lets-message">
+                <h3 class="footer-title">Let's Message Me</h3>
 
+                <div>
+
+                    <input type="text" name="" class="input-box" placeholder="Your Name">
+                    <input type="email" name="" class="input-box" placeholder="Enter your Email">
+                    <textarea type="" name="" class="input-box" placeholder="Message" rows="10"></textarea>
+
+                </div>
+                <button class="button_style" style="margin-top: 20px;">Subscribe</button>
+            </div>
+        </section>
     </footer>
 </body>
+
 </html>
